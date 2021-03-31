@@ -3,5 +3,8 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
-    <string name="camera">カメラを起動する</string>
+    <string name="camera_on">カメラを起動する</string>
+    <string name="camera">カメラ</string>
+    <string name="history">履歴</string>
+    <string name="menu">メニュー</string>
 </resources>
