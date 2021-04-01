@@ -28,31 +28,12 @@ public class MainActivity extends AppCompatActivity {
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.navigation_camera, R.id.navigation_history, R.id.navigation_menu)
                 .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_container);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
 
-        // 3/29paste
-        Button cameraButton = (Button) findViewById(R.id.cameraButton);
-        cameraButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                //コピペした　3/25
-                new IntentIntegrator(MainActivity.this).initiateScan();
-            }
-        });
-    }
+    }}
 
 
-            //コピペした 3/25
-            @Override
-            protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-                IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
-                if (result != null) {
-                    Log.d("readQR", result.getContents());
-                } else {
-                    super.onActivityResult(requestCode, resultCode, data);
-                }
-            }
-        }
 
 
