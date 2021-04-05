@@ -51,4 +51,15 @@ dependencies {
 
     //3/29paste
     compile 'com.journeyapps:zxing-android-embedded:3.6.0'
+
+    //4/5paste
+    //何回か適当に解決
+
+// これでBottomNavigationViewが利用可能
+    //noinspection GradleCompatible,GradleCompatible
+    compile 'com.android.support:appcompat-v7:25.0.0'
+
+    // 他のdesign support libsも使いたいので以下を追加
+    //noinspection GradleCompatible
+    compile 'com.android.support:design:25.0.0'
 }
