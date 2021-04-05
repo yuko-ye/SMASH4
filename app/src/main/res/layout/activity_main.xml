@@ -20,4 +20,19 @@
         app:layout_constraintVertical_bias="0.997"
         app:menu="@menu/bottom_nav_menu" />
 
+    <fragment
+        android:id="@+id/nav_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:navGraph="@navigation/bottom_navigation_view"
+        app:defaultNavHost="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="UnknownId" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
